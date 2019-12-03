@@ -41,19 +41,6 @@ input::placeholder {
   opacity: 0.9;
 }
 
-.g-search input[type="text"] {
-  outline: none;
-  border: none;
-  color: #ffffff;
-  background-color: transparent;
-  font-size: 18px;
-  text-align: left;
-}
-
-.g-search input::placeholder {
-  color: rgba(255, 255, 255, 0.8);
-}
-
 .greetings {
   margin-top: 20px;
   font-size: 3.3em;
