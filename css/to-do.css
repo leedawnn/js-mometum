@@ -1,0 +1,43 @@
+.toDoList {
+  position: absolute;
+  right: 0;
+  bottom: 70px;
+  width: 30%;
+  margin: 0 auto;
+  padding: 15px;
+  color: white;
+  font-size: 20px;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.toDoTitle {
+  opacity: 0.8;
+}
+
+.js-toDoList {
+  margin-top: 10px;
+}
+
+li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  animation: fadeIn 0.5s linear;
+}
+
+.toDoList li * {
+  margin: 0.3em;
+}
+
+.toDoList li i {
+  margin: 5px;
+  margin-left: 0;
+}
+
+.toDoList li i:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}

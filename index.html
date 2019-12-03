@@ -1,40 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="/Users/leedawn/Desktop/visual studio/css:index.css" />
-    <title>Momomtum | momentum-clone</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Main | Mementum Clone</title>
   </head>
   <body>
-    <header>
-      <div class="js-weather weather">
-        <span class="js-weather__current-temp weather__current-temp"></span>
-        <div class="weather__min-max-temp">
-          <span class="js-weather__min-temp weather__min-temp"></span>
-          <span class="js-weather__max-temp weather__max-temp"></span>
+    <div class="status-bar">
+      <div class="status-bar__column g-search">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Google Search" />
+      </div>
+      <div class="status-bar__column status__weather">
+        <div class="s-weather">
+          <i class="fas fa-thermometer-half"></i>
+          <span class="js-weather"></span>
+        </div>
+        <div class="s-place">
+          <i class="fas fa-map-marker-alt"></i>
+          <span class="js-place"></span>
         </div>
       </div>
-      <span class="js-place place"></span>
-    </header>
-    <main>
+    </div>
+    <main class="main">
       <div class="js-clock clock">
-        <h1 class="js-title title"></h1>
+        <span class="js-title">00:00</span>
       </div>
-      <form class="js-form form ask-name">
-        <input type="text" placeholder="What is your name?" />
+      <form class="js-form form">
+        <input type="text" placeholder="Enter your name" icon=/>
       </form>
-      <h4 class="js-greeting greeting"></h4>
-      <form class="js-toDoForm toDoForm">
-        <input type="text" />
+      <h4 class="js-greetings greetings"></h4>
+      <form class="js-toDoForm">
+        <input type="text" placeholder="Write a to do" />
       </form>
-      <ul class="js-toDoList"></ul>
     </main>
-    <script src="clock.js"></script>
-    <script src="greeting.js"></script>
-    <script src="todo.js"></script>
-    <script src="bg.js"></script>
-    <script src="weather.js"></script>
+    <div class="to-do__main toDoList">
+      <span class="toDoTitle">Todo</span>
+      <ul class="js-toDoList"></ul>
+    </div>
+    <div class="bottom-text">
+      <span class="js-quotes">
+        "Sometimes later becomes never. Do it now."
+      </span>
+    </div>
+    <script src="js/clock.js"></script>
+    <script src="js/gretting.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/bg.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/quote.js"></script>
   </body>
 </html>
